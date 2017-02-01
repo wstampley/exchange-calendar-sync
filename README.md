@@ -21,3 +21,11 @@ End Sub
 ```
 
 If you already have an Application_Startup Sub, you will need to just add the contents to the existing one.
+
+# One Time Sync
+
+The system also provides the capability to sync any calendar items that existed before sync was setup. You can add the following after 'SetupCalendarSync' to perform a full calendar sweep.
+
+```
+    EmailSyncInstance.PerformOneTimeSync
+```
